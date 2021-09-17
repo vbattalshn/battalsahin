@@ -1,4 +1,8 @@
-# battalsahin.com
+## Tasarım
+
+**Figma:** [https://www.figma.com](https://www.figma.com/file/PRk7mZvCQgugXNFqgZMjiM/battalsahin.com-Design?node-id=85:2)
+
+![Figma design](https://i.hizliresim.com/9lgi05n.png)
 
 ## Project setup
 ```
