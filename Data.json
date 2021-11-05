@@ -46,19 +46,19 @@
 	],
 	"Projects": [
 		{
-			"Image": "https://github.com/vbattalshn/battalsahin/blob/main/src/assets/turkce-sozluk.com.png?raw=true",
+			"Image": "https://github.com/vbattalshn/battalsahin/blob/main/src/assets/resim_2021-11-05_154226.png?raw=true",
 			"Name": "turkce-sozluk.com",
 			"Github": "",
 			"Site": "https://www.turkce-sozluk.com"
 		},
 		{
-			"Image": "https://github.com/vbattalshn/battalsahin/blob/main/src/assets/vuejs-todo-app-example.netlify.app.png?raw=true",
+			"Image": "https://github.com/vbattalshn/battalsahin/blob/main/src/assets/resim_2021-11-05_154247.png?raw=true",
 			"Name": "Todo App",
 			"Github": "https://github.com/vbattalshn/todo-app",
 			"Site": "https://vuejs-todo-app-example.netlify.app"
 		},
 		{
-			"Image": "https://github.com/vbattalshn/battalsahin/blob/main/src/assets/vuejs-weather-app-example.netlify.app.png?raw=true",
+			"Image": "https://github.com/vbattalshn/battalsahin/blob/main/src/assets/resim_2021-11-05_154254.png?raw=true",
 			"Name": "Weather App",
 			"Github": "https://github.com/vbattalshn/weather-app",
 			"Site": "https://vuejs-weather-app-example.netlify.app"
@@ -99,11 +99,11 @@
 		},
 		{
 			"skillTitle": "REACT.JS",
-			"width": 75
+			"width": 60
 		},
 		{
 			"skillTitle": "C++",
-			"width": 50
+			"width": 40
 		}
 	],
 	"SocialMedias": [
