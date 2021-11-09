@@ -308,6 +308,18 @@ footer{
     fill: #0077b5
 }
 
+.instagram:focus{
+    box-shadow: 0 0 0 3px #E1306C50;
+}
+
+.instagram:hover, .linkedin:focus{
+    background-color: #E1306C1a;
+}
+
+.instagram:hover svg, .instagram:focus svg{
+    fill: #E1306C
+}
+
 .aboutMePage{
     display: flex;
     align-items: center;
