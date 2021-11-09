@@ -312,7 +312,7 @@ footer{
     box-shadow: 0 0 0 3px #E1306C50;
 }
 
-.instagram:hover, .linkedin:focus{
+.instagram:hover, .instagram:focus{
     background-color: #E1306C1a;
 }
 
