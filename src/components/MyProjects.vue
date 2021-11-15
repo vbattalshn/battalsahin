@@ -1,5 +1,5 @@
 <template>
-	<section id="my-project" class="container content-title myProjects-page">
+	<section id="my-project" class="container content-title myProjects-page" tabindex="0">
 		<div class="project-holder" v-for="(project, index) in projects" :key="index">
 			<div class="project-image-holder">
 				<img :src="project.Image" :alt="project.Name" width="200" height="200" />

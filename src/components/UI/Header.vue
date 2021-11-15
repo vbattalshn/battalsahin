@@ -1,4 +1,5 @@
 <template>
+	<button @click="focusComponent('#about-me')" class="accesibilty">Skip Header</button>
 	<header role="banner" class="container">
 		<div class="logo">
 			<svg width="120" height="22" viewBox="0 0 120 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +17,7 @@
 			<div @click="openMenu"></div>
 			<ul>
 				<li v-for="(link, index) in nav" :key="index">
-					<router-link :to="link.Link" ref="skipLink" class="navLink" v-text="link.Name"></router-link>
+					<button @click="focusComponent(link.Link)" class="navLink" v-text="link.Name"></button>
 				</li>
 			</ul>
 		</nav>
@@ -73,6 +74,16 @@ export default {
 				}, 250)
 			}
 		},
+		scrollPage(x){
+			window.scroll({
+				top: x,
+				behavior: 'smooth'
+			});
+		},
+		focusComponent(id){
+			this.scrollPage(document.querySelector(id).offsetTop - 65);
+			document.querySelector(id).focus();
+		}
 	},
 }
 </script>

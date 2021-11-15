@@ -57,6 +57,10 @@ body{
     margin: 0 auto;
 }
 
+.container:focus{
+    box-shadow: none !important;
+}
+
 .content{
     min-height: calc(100vh - 3.5rem)
 }
@@ -98,7 +102,12 @@ nav ul{
     list-style: none;
 }
 
-header nav a{
+.navLink{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header nav a, header nav .navLink{
     color: var(--color-smooth);
     font-weight: 400;
     font-size: 1rem;
@@ -107,7 +116,7 @@ header nav a{
     transition: all .25s ease 0s;
 }
 
-header nav a::after{
+header nav a::after, header nav .navLink::after{
     content: "";
     display: block;
     width: 0%;
@@ -118,19 +127,19 @@ header nav a::after{
     position: absolute;
 }
 
-nav a:focus{
+nav a:focus, nav .navLink:focus{
     box-shadow: none;
 }
 
-header nav a:hover, nav a:focus{
+header nav a:hover, nav a:focus, header nav .navLink:hover, nav .navLink:focus{
     color: var(--color);
 }
 
-header nav a:hover::after, nav a:focus::after{
+header nav a:hover::after, nav a:focus::after, header nav .navLink:hover::after, nav .navLink:focus::after{
     width: 100%;
 }
 
-header nav a.mouseLeave::after{
+header nav a.mouseLeave::after, header nav .navLink.mouseLeave::after{
     right: 0;
 }
 

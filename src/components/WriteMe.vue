@@ -1,5 +1,5 @@
 <template>
-	<section class="container content-title WriteMe-page">
+	<section id="write-me" class="container content-title WriteMe-page" tabindex="0">
 		<div class="writeMe-form-holder">
 			<label for="Name" class="label">
 				<span class="input-name">Adınız:</span>
@@ -19,11 +19,13 @@
 </template>
 
 <script>
+import axios from "axios"
+
 export default {
 	data() {
 		return {
-			isDisabled: true,
-			buttonText: 'Çok yakında aktif olacaktır.',
+			isDisabled: false,
+			buttonText: 'Gönder',
 			Name: '',
 			PhoneNumber: '',
 			Message: '',
@@ -38,9 +40,10 @@ export default {
 	},
 	methods: {
 		checkForm() {
-			if (this.Name.length >= 3 && this.PhoneNumber.length >= 3 && this.Message.length >= 3) {
+			if (this.Name.length >= 3 && this.PhoneNumber.toString().length >= 3 && this.Message.length >= 3) {
 				this.isDisabled = true
 				this.isSending = true
+				this.sendForm()
 			} else {
 				this.openNoti('info', 'Lütfen tüm alanlar doldurun.')
 			}
@@ -73,6 +76,24 @@ export default {
 			this.notification.type = type
 			this.notification.text = text
 			this.notification.class = classes
+		},
+		sendForm(){
+			const data = [
+				this.Name,
+				this.PhoneNumber,
+				this.Message
+			]
+			axios
+				.post("https://turkce-sozluk.com/api/?action=battalsahin", data)
+				.then((response) => {
+					if(response.data.success){
+						this.openNoti('success', 'Form gönderildi.')
+					}else{
+						this.openNoti('error', 'Form gönderilemedi. Lütfen daha sonra tekrar deneyin.')
+					}
+					this.isDisabled = false
+					this.isSending = false
+				})
 		}
 	},
 }

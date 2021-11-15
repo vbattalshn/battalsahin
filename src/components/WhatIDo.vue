@@ -1,5 +1,5 @@
 <template>
-  <section id="what-i-do" class="container content-title WhatIdo-page">
+  <section id="what-i-do" class="container content-title WhatIdo-page" tabindex="0">
     <Card v-for="(data, index) in WhatIDo" :key="index" :Image="data.Image" :Title="data.Title" :Description="data.Description"/>
   </section>
 </template>

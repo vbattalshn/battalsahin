@@ -1,5 +1,5 @@
 <template>
-  <section class="container content aboutMePage" id="about-me">
+  <section class="container content aboutMePage" id="about-me" tabindex="0">
     <div class="aboutMeContent">
       <div class="photo-holder">
         <img :src="AboutMe.Image" :alt="AboutMe.ImageAlt" width="200" height="200">

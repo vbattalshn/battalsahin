@@ -1,5 +1,5 @@
 <template>
-	<section id="my-skills" class="container content-title MySkills-page">
+	<section id="my-skills" class="container content-title MySkills-page" tabindex="0">
 		<div class="myskills-card">
 			<div tabindex="0" class="skill" v-for="(skill, index) in skills" :key="index">
 				<span class="skill-title" v-text="skill.skillTitle"></span>
