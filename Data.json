@@ -22,7 +22,7 @@
 		}
 	],
 	"AboutMe": {
-		"Image": "https://firebasestorage.googleapis.com/v0/b/battalsahin-b401d.appspot.com/o/1637088582332%20(1).jpg?alt=media&token=904b48a9-7120-4a8a-8362-48320ec044f2",
+		"Image": "https://firebasestorage.googleapis.com/v0/b/battalsahin-b401d.appspot.com/o/battalsahin.com%2Fresim_2021-11-18_210815.png?alt=media&token=72d425e5-8ae3-45ef-ae30-6e621c754cc1",
 		"ImageAlt": "Battal ŞAHİN",
 		"Title": "Merhaba!",
 		"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra turpis eu in sed aliquam, molestie aliquet viverra sed. Cursus morbi eget at egestas iaculis magna pharetra."
@@ -46,19 +46,19 @@
 	],
 	"Projects": [
 		{
-			"Image": "https://firebasestorage.googleapis.com/v0/b/battalsahin-b401d.appspot.com/o/resim_2021-11-05_154226.png?alt=media&token=ef736879-03a2-49ab-8fa8-1557745f8c1b",
+			"Image": "https://firebasestorage.googleapis.com/v0/b/battalsahin-b401d.appspot.com/o/battalsahin.com%2Fresim_2021-11-18_211118.png?alt=media&token=e8b83cda-e0ce-4db5-a6ad-25a0dfeb54eb",
 			"Name": "turkce-sozluk.com",
 			"Github": "",
 			"Site": "https://www.turkce-sozluk.com"
 		},
 		{
-			"Image": "https://firebasestorage.googleapis.com/v0/b/battalsahin-b401d.appspot.com/o/resim_2021-11-05_154247.png?alt=media&token=a1b8fcd4-7020-415e-87bc-66ee4cf880a3",
+			"Image": "https://firebasestorage.googleapis.com/v0/b/battalsahin-b401d.appspot.com/o/battalsahin.com%2Fresim_2021-11-18_211150.png?alt=media&token=00466a75-c7e8-4edc-a0e8-f391f79a667c",
 			"Name": "Todo App",
 			"Github": "https://github.com/vbattalshn/todo-app",
 			"Site": "https://vuejs-todo-app-example.netlify.app"
 		},
 		{
-			"Image": "https://firebasestorage.googleapis.com/v0/b/battalsahin-b401d.appspot.com/o/resim_2021-11-05_154254.png?alt=media&token=0ecd1089-826f-4101-b3e9-b3c2481a2ac4",
+			"Image": "https://firebasestorage.googleapis.com/v0/b/battalsahin-b401d.appspot.com/o/battalsahin.com%2Fresim_2021-11-18_211221.png?alt=media&token=6b5538d2-010d-45d4-8137-db5e3a91ff97",
 			"Name": "Weather App",
 			"Github": "https://github.com/vbattalshn/weather-app",
 			"Site": "https://vuejs-weather-app-example.netlify.app"
