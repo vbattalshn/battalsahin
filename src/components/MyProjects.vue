@@ -2,7 +2,7 @@
 	<section id="my-project" class="container content-title myProjects-page" tabindex="0">
 		<div class="project-holder" v-for="(project, index) in projects" :key="index">
 			<div class="project-image-holder">
-				<img :src="project.Image" :alt="project.Name" width="200" height="200" />
+				<img loading="lazy" :src="project.Image" :alt="project.Name" width="200" height="200" />
 			</div>
 			<div class="project-options">
 				<a v-if="project.Github != '' || project.Github" target="_blank" :href="project.Github" title="Githubda görüntüle" class="github-link project-link">

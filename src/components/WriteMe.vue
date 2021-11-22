@@ -13,7 +13,7 @@
 				<span class="input-name">Mesajınız:</span>
 				<textarea autocomplete="off" v-model="Message" name="text" id="message" class="message textarea" title="Minimum 3 karakter."></textarea>
 			</label>
-			<button @click="checkForm" class="submit-btn" :class="{spinner: isSending}" :disabled="isSending ? '' : isDisabled" v-text="!isSending ? buttonText : ''"></button>
+			<button @click="checkForm" class="submit-btn" :class="({spinner: isSending}, btnClass)" :disabled="isSending ? '' : isDisabled" v-text="!isSending ? buttonText : ''"></button>
 		</div>
 	</section>
 </template>
@@ -30,7 +30,8 @@ export default {
 			PhoneNumber: '',
 			Message: '',
 			isSending: false,
-			closeTime: null
+			closeTime: null,
+			btnClass: ''
 		}
 	},
 	computed: {
@@ -43,6 +44,7 @@ export default {
 			if (this.Name.length >= 3 && this.PhoneNumber.toString().length >= 3 && this.Message.length >= 3) {
 				this.isDisabled = true
 				this.isSending = true
+				this.btnClass = 'spinner'
 				this.sendForm()
 			} else {
 				this.openNoti('info', 'Lütfen tüm alanlar doldurun.')
@@ -88,10 +90,13 @@ export default {
 				.then((response) => {
 					if(response.data.success){
 						this.openNoti('success', 'Form gönderildi.')
+						this.buttonText = "Gönderildi 👍"
+						this.btnClass = "success-btn"
 					}else{
-						this.openNoti('error', 'Form gönderilemedi. Lütfen daha sonra tekrar deneyin.')
+						this.openNoti('error', response.data.message)
+						this.isDisabled = false
+						this.btnClass = ''
 					}
-					this.isDisabled = false
 					this.isSending = false
 				})
 		}
