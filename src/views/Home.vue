@@ -6,8 +6,8 @@
   <MySkills />
   <Title count="03" title="Projelerim" />
   <MyProjects />
-  <!-- <Title count="04" title="Hakkımda Ne Söylüyolar?" />
-  <Comments /> -->
+  <Title count="05" title="Hakkımda Ne Söylüyolar?" />
+  <Comments />
   <Title count="04" title="Bana Yazın" />
   <WriteMe />
 </template>

@@ -14,6 +14,7 @@
 	--dark-smooth: #303030;
 	--dark-smooth-50: #30303080;
 	--color-smooth: #ccc;
+	--color-smooth-5: #cccccc80;
 	--color-smooth-25: #cccccc40;
 	--color: #f5f5f5;
 	--white: #fafafa;
@@ -910,7 +911,107 @@ input[type='number'] {
 
 .success-btn {
     background: var(--green-50) !important;
-    border: 1
-px
- solid var(--green) !important;
+    border: 1px solid var(--green) !important;
 }
+
+.Comment-card{
+	padding: .75rem;
+	border-radius: .5rem;
+	background-color: var(--dark-smooth);
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	transform: scale(.95);
+	transition: all .25s ease 0s;
+}
+
+.Comment-card.is-active{
+	transform: scale(1);
+}
+
+.author-avatar{
+	width: 5rem;
+	height: 5rem;
+	display: block;
+	border-radius: .5rem;
+}
+
+.Comment{
+	padding: .75rem 0;
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--color-smooth);
+}
+
+.author-name{
+	display: block;
+	padding: 0 0 .3rem 0;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--color)
+}
+
+.author-desc{
+	display: block;
+	color: var(--color-smooth);
+	font-weight: 400;
+}
+
+.Comments-page{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.Comments-page > div{
+	display: contents !important;
+}
+
+.splide__arrow{
+	padding: .5rem !important;
+	border-radius: .5rem !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center!important ;
+	background-color: var(--color-smooth-25) !important;
+	backdrop-filter: blur(1px) !important;
+	transition: all .25s ease 0s !important;
+}
+
+.splide__arrow:hover{
+	backdrop-filter: blur(3px) !important;
+}
+
+.splide__arrow:focus{
+	box-shadow: 0 0 0 3px var(--red-50) !important;
+}
+
+.splide__arrow svg{
+	fill: var(--color-smooth) !important;
+}
+
+button.splide__pagination__page{
+	background-color: var(--color-smooth-5);
+}
+
+button.splide__pagination__page:hover{
+	background-color: var(--red-hover);
+}
+
+button.splide__pagination__page.is-active{
+	background-color: var(--red);
+}
+
+
+/*
+<SplideSlide class="Comment-card" v-for="comment in comments" :key="comment.id">
+				<img :src="comment.Avatar" :alt="comment.Name" class="author-avatar" />
+				<p class="Comment" v-text="comment.Comment"></p>
+				<span class="author-holder">
+					<span class="author-name" v-text="comment.Name"></span>
+					<span class="author-desc" v-text="comment.Desc"></span>
+				</span>
+			</SplideSlide>*/
