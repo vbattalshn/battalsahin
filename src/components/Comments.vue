@@ -3,7 +3,7 @@
 		<Splide :options="options">
 			<SplideSlide class="Comment-card" v-for="comment in comments" :key="comment.id">
 				<img :src="comment.Avatar" :alt="comment.Name" class="author-avatar" />
-				<p class="Comment" v-text="comment.Comment"></p>
+				<p class="Comment">"{{ comment.Comment }}"</p>
 				<span class="author-holder">
 					<span class="author-name" v-text="comment.Name"></span>
 					<span class="author-desc" v-text="comment.Desc"></span>
@@ -33,6 +33,9 @@ export default {
 			rewind: true,
 			type: 'loop',
 			perPage: 3,
+			focus: 'center',
+			gap: '1rem',
+			autoplay: true,
 			breakpoints: {
 				1024: {
 					perPage: 3,
@@ -42,11 +45,9 @@ export default {
 				},
 				640: {
 					perPage: 1,
+					gap: '0rem',
 				},
 			},
-			focus: 'center',
-			gap: '1rem',
-			autoplay: true,
 		}
 
 		return {options}
