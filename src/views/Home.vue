@@ -6,9 +6,9 @@
   <MySkills />
   <Title count="03" title="Projelerim" />
   <MyProjects />
-  <Title count="05" title="Yorumlar" />
+  <Title count="04" title="Yorumlar" />
   <Comments />
-  <Title count="04" title="Bana Yazın" />
+  <Title count="05" title="Bana Yazın" />
   <WriteMe />
 </template>
 
