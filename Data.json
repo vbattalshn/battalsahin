@@ -167,6 +167,13 @@
 			"Desc": "Bionluk Müşterisi",
 			"Comment": "Arkadaş iletişim olarak çok yakından ilgileniyor gerekli bilgileri alarak düzenleme ekleme yaparak hataları gidermekte başarılı bilgiye sahip ve zamanından önce teslimi için Kendisine emeklerinden dolayı Teşekkür ederim.",
 			"Avatar": "https://turkce-sozluk.com/api/src/bionluk.png"
+		},
+                {
+			"id": 8,
+			"Name": "maydin52",
+			"Desc": "Bionluk Müşterisi",
+			"Comment": "hızlı çözüm eline sağlık",
+			"Avatar": "https://turkce-sozluk.com/api/src/bionluk.png"
 		}
 	]
 }
