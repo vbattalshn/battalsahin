@@ -1,14 +1,14 @@
 <template>
   <AboutMe />
-  <Title count="01" title="Neler Yaparım" />
+  <Title count="01" title="Neler Yaparım?" />
   <WhatIDo />
   <Title count="02" title="Bildiklerim" />
   <MySkills />
   <Title count="03" title="Projelerim" />
   <MyProjects />
-  <Title count="04" title="Yorumlar" />
+  <Title count="05" title="Hakkımda Ne Söylüyolar?" />
   <Comments />
-  <Title count="05" title="Bana Yazın" />
+  <Title count="04" title="Bana Yazın" />
   <WriteMe />
 </template>
 

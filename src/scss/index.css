@@ -816,6 +816,9 @@ input[type='number'] {
 	justify-content: space-between;
 	z-index: 2000;
 	cursor: pointer;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	color: var(--color-smooth);
 }
 @-webkit-keyframes openAnim {
 	100% {
@@ -829,20 +832,19 @@ input[type='number'] {
 }
 
 .info {
-	background: #fafafa80;
-	-webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(5px);
-	color: var(--dark-smooth);
+	background: #ffffff10;
+	background: linear-gradient(90deg, rgba(246, 216, 96, 0.5) 0%, rgba(255, 255, 255, 0.1) 20%);
 }
 
 .error {
-	background: var(--noti-red);
-	color: var(--color);
+	background: #ffffff10;
+	background: linear-gradient(90deg, rgba(182, 25, 25, 0.5) 0%, rgba(255, 255, 255, 0.1) 20%);
+
 }
 
 .success {
-	background: var(--green);
-	color: var(--color);
+	background: #ffffff10;
+	background: linear-gradient(90deg, rgba(0, 128, 128, 0.5) 0%, rgba(255, 255, 255, 0.1) 20%);
 }
 
 .notification.close {
@@ -979,17 +981,17 @@ input[type='number'] {
 
 .splide__arrow{
 	padding: .5rem !important;
-	border-radius: .5rem !important;
+	border-radius: 50% !important;
 	display: flex !important;
 	align-items: center !important;
 	justify-content: center!important ;
-	background-color: var(--color-smooth-25) !important;
-	backdrop-filter: blur(1px) !important;
+	background-color: var(--color-smooth-5) !important;
+	backdrop-filter: blur(3px) !important;
 	transition: all .25s ease 0s !important;
 }
 
 .splide__arrow:hover{
-	backdrop-filter: blur(3px) !important;
+	backdrop-filter: blur(1px) !important;
 }
 
 .splide__arrow:focus{
@@ -997,7 +999,7 @@ input[type='number'] {
 }
 
 .splide__arrow svg{
-	fill: var(--color-smooth) !important;
+	fill: var(--dark-smooth) !important;
 }
 
 button.splide__pagination__page{
@@ -1019,5 +1021,4 @@ button.splide__pagination__page.is-active{
 	.Comment-card{
 		transform: scale(1);
 	}
-	
 }
