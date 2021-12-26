@@ -1,6 +1,6 @@
 <template>
   <AboutMe />
-  <Title count="01" title="Neler Yaparıma" />
+  <Title count="01" title="Neler Yaparım" />
   <WhatIDo />q
   <Title count="02" title="Bildiklerim" />
   <MySkills />
