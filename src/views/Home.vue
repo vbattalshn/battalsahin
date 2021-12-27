@@ -1,7 +1,7 @@
 <template>
   <AboutMe />
   <Title count="01" title="Neler Yaparım" />
-  <WhatIDo />q
+  <WhatIDo />
   <Title count="02" title="Bildiklerim" />
   <MySkills />
   <Title count="03" title="Projelerim" />
