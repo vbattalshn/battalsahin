@@ -64,7 +64,7 @@
 			"Site": "https://vuejs-weather-app-example.netlify.app"
 		},
                 {
-			"Image": "https://turkce-sozluk.com/api/src/",
+			"Image": "https://turkce-sozluk.com/api/src/url_shortener.png",
 			"Name": "Url Shortener",
 			"Github": "https://github.com/vbattalshn/url-shortener",
 			"Site": "https://ushrtn.netlify.app/"
