@@ -62,6 +62,12 @@
 			"Name": "Weather App",
 			"Github": "https://github.com/vbattalshn/weather-app",
 			"Site": "https://vuejs-weather-app-example.netlify.app"
+		},
+                {
+			"Image": "https://turkce-sozluk.com/api/src/",
+			"Name": "Url Shortener",
+			"Github": "https://github.com/vbattalshn/url-shortener",
+			"Site": "https://ushrtn.netlify.app/"
 		}
 	],
 	"Skills": [
