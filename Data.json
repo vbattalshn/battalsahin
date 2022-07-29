@@ -68,6 +68,12 @@
 			"Name": "Url Shortener",
 			"Github": "https://github.com/vbattalshn/url-shortener",
 			"Site": "https://ushrtn.netlify.app/"
+		},
+		{
+			"Image": "https://turkce-sozluk.com/api/src/vue-timer-app.netlify.app.png",
+			"Name": "Timer App",
+			"Github": "https://github.com/vbattalshn/timer-app",
+			"Site": "https://vue-timer-app.netlify.app/"
 		}
 	],
 	"Skills": [
